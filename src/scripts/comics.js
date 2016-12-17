@@ -15,11 +15,12 @@ $(document).ready(function(){
 		}
 
 		var showActiveImage = function(image) {
-            var top = $(image).offset().top;
-            var left = $(image).offset().left;
-            //$('.comics__container').scrollTop(top);
-            $(image).offset({top: 0, left: left});
-            //document.querySelector(image).scrollIntoView();
+            var top = $(image)[0].offsetTop;
+            //var top2 = $(image).offset().top;            
+
+            $('.comics__container').animate({
+                scrollTop: top
+            }, 500);
 		}
 
 		var setActive = function() {
@@ -33,7 +34,6 @@ $(document).ready(function(){
             	$(parent).addClass('_active');
             	currentActive = parent;
             	showActiveImage($(this).attr('href'));
-            	//showActiveImage(this.getAttribute('href'));
             }
 
 		}
