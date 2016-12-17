@@ -1,0 +1,52 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container:after {
+	display: block;
+	content: '';
+	clear: both;
+	visibility: hidden;
+}
+
+.comics__list {
+	width: 11%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comics__item {
+	border: 2px solid transparent;
+}
+
+.comics__item._active {
+	border: 2px solid lightblue;
+}
+
+.comics__trigger {
+	display: block;
+	text-decoration: none;
+}
+
+.comics__preview {
+	display: block;
+	width: 100%;
+	max-height: 100%;
+}
+
+.comics__right {
+	float: right;
+	width: 89%;
+}
+.comics__container {
+	max-height: 600px;
+	overflow: auto;
+
+}
+.comics__content {
+	width: 100%;
+}
+
