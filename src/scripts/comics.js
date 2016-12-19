@@ -15,8 +15,7 @@ $(document).ready(function(){
 		}
 
 		var showActiveImage = function(imgContainer) {
-            var top = $(imgContainer)[0].offsetTop;
-            //var top = $(image).offset().top;            
+            var top = $(imgContainer)[0].offsetTop;   
 
             $('.comics__container').animate({
                 scrollTop: top
