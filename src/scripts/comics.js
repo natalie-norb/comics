@@ -14,9 +14,9 @@ $(document).ready(function(){
 			}
 		}
 
-		var showActiveImage = function(image) {
-            var top = $(image)[0].offsetTop;
-            //var top2 = $(image).offset().top;            
+		var showActiveImage = function(imgContainer) {
+            var top = $(imgContainer)[0].offsetTop;
+            //var top = $(image).offset().top;            
 
             $('.comics__container').animate({
                 scrollTop: top
