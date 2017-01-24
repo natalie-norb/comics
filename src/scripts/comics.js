@@ -22,7 +22,7 @@ $(document).ready(function(){
             }, 500);
 		}
 
-		var setActive = function() {
+		var setActive = function(event) {
 		  	var parent = this.closest('.comics__item'),
             	currentId = $(currentActive).find('.comics__trigger').attr('href');
 
